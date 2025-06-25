@@ -10,7 +10,7 @@ export interface IVideo {
   _id?: mongoose.Types.ObjectId;
   title: string;
   description: string;
-  videourl: string;
+  videoUrl: string;
   thumbnailurl: string;
   controls?: boolean;
   transformation?: {
@@ -32,7 +32,7 @@ const videoSchema = new Schema<IVideo>(
       type: String,
       required: true,
     },
-    videourl: {
+    videoUrl: {
       type: String,
       required: true,
     },
